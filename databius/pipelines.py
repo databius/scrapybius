@@ -5,7 +5,13 @@
 
 
 # useful for handling different item types with a single interface
-from itemadapter import ItemAdapter
+
+from scrapy.pipelines.files import FilesPipeline
+
+
+class SvgPipeline(FilesPipeline):
+    def file_path(self, request, response=None, info=None, *, item=None):
+        return item['name'] + ".svg"
 
 
 class DatabiusPipeline:

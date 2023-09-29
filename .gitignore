@@ -19,9 +19,8 @@ pip-log.txt
 .pytest_cache
 
 .DS_Store
-.idea/*
-.python-version
-.vscode/*
+.idea
+.vscode
 
 /test.py
 /test_*.*

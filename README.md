@@ -16,6 +16,11 @@ poetry install
 poetry shell
 ```
 
+### Playwright
+```shell
+playwright install
+```
+
 ### Creating a project
 ```shell
 # scrapy startproject <project_name> [project_dir]
