@@ -13,4 +13,11 @@ An application framework for crawling websites and extracting structured data (h
 
 ```shell
 poetry install
+poetry shell
+```
+
+### Creating a project
+```shell
+# scrapy startproject <project_name> [project_dir]
+scrapy startproject databius .
 ```
