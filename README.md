@@ -21,3 +21,13 @@ poetry shell
 # scrapy startproject <project_name> [project_dir]
 scrapy startproject databius .
 ```
+### Start the first spider
+```shell
+scrapy genspider apache.org www.apache.org/logos
+```
+
+### Run a spider
+```shell
+scrapy crawl apache.org
+```
+
