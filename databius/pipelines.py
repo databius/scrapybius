@@ -11,7 +11,10 @@ from scrapy.pipelines.files import FilesPipeline
 
 class SvgPipeline(FilesPipeline):
     def file_path(self, request, response=None, info=None, *, item=None):
-        return item['name'] + ".svg"
+        file_dir = self.spiderinfo.spider.name
+        file_dir = f'{file_dir}/{item.get("category")}' if item.get("category") else file_dir
+        file_dir = f'{file_dir}/{item.get("sub_category")}' if item.get("sub_category") else file_dir
+        return f"{file_dir}/{item['name']}.svg"
 
 
 class DatabiusPipeline:

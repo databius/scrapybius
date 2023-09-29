@@ -38,12 +38,10 @@ ROBOTSTXT_OBEY = True
 
 # Override the default request headers:
 DEFAULT_REQUEST_HEADERS = {
-    "Host": "svn.apache.org",
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0",
     "Accept": "*/*",
     "Accept-Language": "en-US,en;q=0.5",
     "Accept-Encoding": "gzip, deflate, br",
-    # "Referer": "https://www.apache.org/logos/",
     "x-original-referral": "https://www.google.com/",
     "DNT": "1",
     "Connection": "keep-alive",

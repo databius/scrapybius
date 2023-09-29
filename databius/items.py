@@ -14,5 +14,7 @@ class DatabiusItem(scrapy.Item):
 
 class SvgItem(scrapy.Item):
     name = scrapy.Field()
+    category = scrapy.Field()
+    sub_category = scrapy.Field()
     ref = scrapy.Field()
     file_urls = scrapy.Field()

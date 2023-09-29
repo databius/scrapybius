@@ -29,6 +29,7 @@ scrapy startproject databius .
 ### Start the first spider
 ```shell
 scrapy genspider apache.org www.apache.org/logos
+scrapy genspider firstmark.com https://mad.firstmark.com/
 ```
 
 ### Run a spider
