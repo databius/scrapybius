@@ -1,7 +1,7 @@
 import scrapy
 from scrapy_playwright.page import PageMethod
 
-from databius.items import SvgItem
+from databius.items import LogoItem
 
 DOWNLOAD_DIR = "./data"
 
@@ -14,7 +14,7 @@ class ApacheOrgSpider(scrapy.Spider):
         "ITEM_PIPELINES": {
             "databius.pipelines.SvgPipeline": 1,
         },
-        "FILES_STORE": f"{DOWNLOAD_DIR}/images"
+        "FILES_STORE": f"{DOWNLOAD_DIR}"
     }
 
     def start_requests(self):
@@ -55,4 +55,4 @@ class ApacheOrgSpider(scrapy.Spider):
                     img_url = img.xpath('@href').get()
                     if str(img_url).endswith(".svg"):
                         name = f"{base_name} v{i + 1}" if i > 0 else base_name
-                        yield SvgItem(name=name, ref=ref, file_urls=[img_url])
+                        yield LogoItem(name=name, ref=ref, file_urls=[img_url])

@@ -12,7 +12,7 @@ class DatabiusItem(scrapy.Item):
     pass
 
 
-class SvgItem(scrapy.Item):
+class LogoItem(scrapy.Item):
     name = scrapy.Field()
     category = scrapy.Field()
     sub_category = scrapy.Field()
