@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "scrapybius"
+version = "0.1.0"
+description = ""
+authors = ["Databius <databius@databius.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Scrapy = "2.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
